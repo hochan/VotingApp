@@ -50,7 +50,7 @@ var app = {
 
 
 function goToNextPage(){
-	self.location='file:///D:/HOCHAN/Documents/GitHub/VotingApp/www/QuestionScreen.html'
+	self.location='QuestionScreen.html'
 }
 
 
