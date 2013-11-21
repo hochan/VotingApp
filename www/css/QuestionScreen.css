@@ -1,0 +1,52 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.3.2/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer1 */
+.ui-content.QuestionScreen_mobilecontainer1 {
+	padding: 15px 15px 15px 15px;
+	height: 100%;
+}
+/* lblQuestion */
+.QuestionScreen_lblQuestion {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilelist_3 */
+.ui-content .QuestionScreen_mobilelist_3 {
+	margin: 4px -15px 0px -15px;
+}
+/* mobilelistitem_4 */
+.ui-mobile-viewport ul[data-role="listview"] li.QuestionScreen_mobilelistitem_4 {
+	padding: 0px 0px 4px 0px;
+	padding-right: 30px; /* consider extra icon */
+}
+.ui-mobile-viewport ul[data-role="listview"] li.QuestionScreen_mobilelistitem_4 span.ui-icon.extra {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -9px;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.QuestionScreen_mobilelistitem_4[data-icon="false"] span.ui-icon.extra {
+	display: none;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.QuestionScreen_mobilelistitem_4[data-icon="false"] {
+	padding-right: 0px; /* consider nothing */
+}
+/* mobilelistitembutton_5 */
+.QuestionScreen_mobilelistitembutton_5 {
+
+}
+/* btnAnswer */
+#QuestionScreen_btnAnswer {
+
+}
+.ui-btn.QuestionScreen_btnAnswer {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter1 */
+.QuestionScreen_mobilefooter1 {
+	min-height:38px;
+}

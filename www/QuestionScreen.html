@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            QuestionScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="lib/jquerymobile/1.3.2/jquery.mobile.structure-1.3.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="lib/jquerymobile/1.3.2/jquery.mobile-1.3.2.js">
+        </script>
+        <script type="text/javascript" src="js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="lib/cordova.js">
+        </script>
+        <link href="css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="QuestionScreen" id="QuestionScreen"
+        class="type-interior" data-theme="b" data-add-back-btn="false" data-back-btn-text="Back">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="fixed" data-theme="b" name="mobileheader1"
+            id="QuestionScreen_mobileheader1" class=' QuestionScreen_mobileheader1 '>
+                <h1 dsid="mobileheader1">
+                    Caption
+                </h1>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="QuestionScreen_mobilecontainer1" name="mobilecontainer1"
+            class=" QuestionScreen_mobilecontainer1" dsid="mobilecontainer1" data-theme="">
+                <link href="css/QuestionScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="js/QuestionScreen.js">
+                </script>
+                <!-- lblQuestion -->
+                <div name="lblQuestion" id="QuestionScreen_lblQuestion" dsid="lblQuestion" data-role="appery_label"
+                class=' QuestionScreen_lblQuestion '>
+                    Question
+                </div>
+                <!-- mobilelist_3 -->
+                <ul data-role="listview" id="QuestionScreen_mobilelist_3" class=' QuestionScreen_mobilelist_3 '
+                name="mobilelist_3" dsid="mobilelist_3" data-theme="b" data-divider-theme="b" data-count-theme="b"
+                style="">
+                    <!-- mobilelistitem_4 -->
+                    <li id="QuestionScreen_mobilelistitem_4" name="mobilelistitem_4" dsid="mobilelistitem_4"
+                    class=' QuestionScreen_mobilelistitem_4 '>
+                        <div class="ui-li-static-container">
+                            <!-- btnAnswer -->
+                            <a data-role="button" name="btnAnswer" dsid="btnAnswer" class='  QuestionScreen_btnAnswer'
+                            id="QuestionScreen_btnAnswer" data-corners="false" x-apple-data-detectors="false"
+                            data-mini="false" data-theme="b" tabindex="2">
+                            Answer
+                            </a>
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow extra">
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class=" QuestionScreen_mobilefooter1"
+            name="mobilefooter1" dsid="mobilefooter1" id="QuestionScreen_mobilefooter1" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>
